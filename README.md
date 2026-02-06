@@ -1,8 +1,8 @@
 # Order Processing System
 
-Microservices-based order processing system with Kafka messaging and gRPC communication.
+Microservices-based order processing system built with ASP.NET Core, Kafka messaging, and gRPC communication.
 
-[![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?style=flat&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-9.0-512BD4?style=flat&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/apps/aspnet)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Apache Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)](https://kafka.apache.org/)
 [![gRPC](https://img.shields.io/badge/gRPC-244c5a?style=flat&logo=google&logoColor=white)](https://grpc.io/)
@@ -10,7 +10,7 @@ Microservices-based order processing system with Kafka messaging and gRPC commun
 
 ## Overview
 
-A distributed order processing service implementing Clean Architecture principles. The system handles order lifecycle management including creation, approval, packing, and delivery stages with full event sourcing through Kafka.
+A distributed order processing service built with ASP.NET Core implementing Clean Architecture principles. The system handles order lifecycle management including creation, approval, packing, and delivery stages with full event sourcing through Kafka.
 
 ## Architecture
 
@@ -30,11 +30,9 @@ A distributed order processing service implementing Clean Architecture principle
 +------------------+            +------------------+            +------------------+
 ```
 
-## Tech Stack
-
 | Layer          | Technology                          |
 |----------------|-------------------------------------|
-| Runtime        | .NET 9                              |
+| Runtime        | ASP.NET Core 9                      |
 | API Gateway    | ASP.NET Core REST API               |
 | Internal API   | gRPC with Protobuf                  |
 | Messaging      | Apache Kafka                        |
