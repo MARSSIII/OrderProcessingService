@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    
+    <ItemGroup>
+      <PackageReference Include="Google.Protobuf" />
+      <PackageReference Include="Grpc.Core.Api" />
+        <PackageReference Include="Grpc.Tools">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="order_creation.proto" GrpcServices="None" />
+        <Protobuf Include="order_processing.proto" GrpcServices="None" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="orders.proto" GrpcServices="Both" />
+    </ItemGroup>
+</Project>

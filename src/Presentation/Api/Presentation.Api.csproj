@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference
+      Include="..\..\Application\Application.Contracts\Application.Contracts.csproj" />
+    <ProjectReference Include="..\Presentation.Protos\Presentation.Protos.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package task1.api.products.v1;
+
+option csharp_namespace = "Presentation.Protos.Products.V1";
+
+service ProductGrpcService {
+  rpc CreateProductsAsync (CreateProductsRequest) returns (ProductListResponse);
+}
+
+message CreateProductsRequest {
+  repeated CreateProductItem products = 1;
+}
+
+message CreateProductItem {
+  string name = 1;
+  string price = 2;
+}
+
+message ProductListResponse {
+  repeated ProductResponse products = 1;
+}
+
+message ProductResponse {
+  int64 id = 1;
+}

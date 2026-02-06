@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Task1\Infrastructure\Infrastructure.Kafka.Contracts\Infrastructure.Kafka.Contracts.csproj" />
+    <ProjectReference Include="..\..\Task1\Presentation\Presentation.Protos\Presentation.Protos.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" />
+    <PackageReference Include="Grpc.Net.Client" />
+    <PackageReference Include="Grpc.Net.ClientFactory" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" />
+  </ItemGroup>
+
+</Project>

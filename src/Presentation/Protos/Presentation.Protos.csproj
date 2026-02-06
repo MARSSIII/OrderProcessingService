@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <Protobuf Include="*.proto" GrpcServices="Both" />
+    <Protobuf Update="order_service.proto">
+      <Access>Public</Access>
+      <ProtoCompile>True</ProtoCompile>
+      <CompileOutputs>True</CompileOutputs>
+      <OutputDir>obj/Debug/net9.0/</OutputDir>
+      <Generator>MSBuild:Compile</Generator>
+    </Protobuf>
+    <Protobuf Update="product_service.proto">
+      <Access>Public</Access>
+      <ProtoCompile>True</ProtoCompile>
+      <CompileOutputs>True</CompileOutputs>
+      <OutputDir>obj/Debug/net9.0/</OutputDir>
+      <Generator>MSBuild:Compile</Generator>
+    </Protobuf>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" />
+    <PackageReference Include="Grpc.Net.Client" />
+    <PackageReference Include="Grpc.Tools">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
